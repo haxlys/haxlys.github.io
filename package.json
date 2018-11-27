@@ -5,27 +5,19 @@
   "author": "haxlys <haxlys@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "start": "parcel index_dev.html",
+    "build": "parcel build src/main.js"
   },
   "dependencies": {
-    "vue": "^2.4.4",
-    "vue-highlightjs": "^1.3.3",
-    "vue-prismjs": "^0.1.0"
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "@vue/component-compiler-utils": "^2.3.0",
+    "babel-preset-env": "^1.7.0",
+    "cssnano": "^4.1.7",
+    "sass": "^1.15.1",
+    "vue-template-compiler": "^2.5.17"
   }
 }

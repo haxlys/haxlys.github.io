@@ -1,46 +1,31 @@
 <template>
   <div id="app">
-    <left-container></left-container>
-    <content-container></content-container>
+    <h1>
+      {{ msg }}
+      <span class="love">{{love}}</span>
+    </h1>
+    <router-link to="home">Home</router-link>
   </div>
 </template>
 
 <script>
-import LeftContainer from './layout/Left.vue'
-import ContentContainer from './layout/Content.vue'
-
 export default {
-  name: 'app',
-  components: { LeftContainer, ContentContainer },
+  name: "app",
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App!'
-    }
+      msg: "재희 알러뷰",
+      love: "♥"
+    };
   }
-}
+};
 </script>
 
-<style lang="scss">
+<style lang="css">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #56b983;
+  font-size: 5vw;
 }
-
-html,
-body {
-  height: 100%;
+.love {
+  color: red;
 }
-
-pre {
-  font-family: initial;
-  margin: initial;
-}
-
-.center {
-  text-align: center;
-}
-
 </style>
