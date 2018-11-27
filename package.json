@@ -19,5 +19,8 @@
     "cssnano": "^4.1.7",
     "sass": "^1.15.1",
     "vue-template-compiler": "^2.5.17"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
