@@ -4,7 +4,8 @@
       {{ msg }}
       <span class="love">{{love}}</span>
     </h1>
-    <router-link to="home">Home</router-link>
+    <router-link to="/foo">foo</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "재희 알러뷰",
+      msg: "재희 알러뷰!!",
       love: "♥"
     };
   }
